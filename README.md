@@ -4,6 +4,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Data Validation](https://github.com/Akier-X/fx-data-pipeline/actions/workflows/data-validation.yml/badge.svg)](https://github.com/Akier-X/fx-data-pipeline/actions/workflows/data-validation.yml)
 [![データソース](https://img.shields.io/badge/Data%20Sources-3+-orange)](https://github.com/Akier-X/fx-data-pipeline)
 
 ---
