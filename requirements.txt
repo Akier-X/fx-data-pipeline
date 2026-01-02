@@ -1,0 +1,19 @@
+# Core Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# FX Data Sources
+yfinance>=0.2.28
+fredapi>=0.5.1
+oandapyV20>=0.7.2
+
+# Technical Indicators
+ta-lib>=0.4.28  # Optional: pip install TA-Lib (requires binary install)
+
+# Data Visualization
+matplotlib>=3.7.0
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
+tqdm>=4.66.0
