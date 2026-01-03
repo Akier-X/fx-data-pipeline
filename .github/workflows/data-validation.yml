@@ -124,3 +124,35 @@ jobs:
       with:
         name: pipeline-report
         path: pipeline_report.md
+
+    - name: Install evaluation dependencies
+      run: |
+        pip install matplotlib numpy
+
+    - name: Generate comprehensive evaluation
+      run: |
+        python .github/scripts/generate_evaluation.py
+
+    - name: Upload evaluation graphs (Data Sources)
+      uses: actions/upload-artifact@v3
+      with:
+        name: data-sources-graphs
+        path: evaluation_output/data_sources_comparison.png
+
+    - name: Upload evaluation graphs (Pipeline Performance)
+      uses: actions/upload-artifact@v3
+      with:
+        name: pipeline-performance-graphs
+        path: evaluation_output/pipeline_performance.png
+
+    - name: Upload evaluation summary
+      uses: actions/upload-artifact@v3
+      with:
+        name: pipeline-evaluation-summary
+        path: evaluation_output/pipeline_summary.json
+
+    - name: Upload evaluation report
+      uses: actions/upload-artifact@v3
+      with:
+        name: pipeline-evaluation-report
+        path: evaluation_output/PIPELINE_EVALUATION_REPORT.md
